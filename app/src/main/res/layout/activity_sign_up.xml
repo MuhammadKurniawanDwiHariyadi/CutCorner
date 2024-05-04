@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/IVLogo2"
+        style="@style/logo_onboarding"
+        android:layout_width="0dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo2"
+        android:src="@drawable/logo"
+        android:transitionName="logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVLoginTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:alpha="0"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/IVLogo2"
+        tools:alpha="100"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <TextView
+        android:id="@+id/TVTittleEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:alpha="0"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/TVLoginTittle"
+        app:layout_constraintTop_toBottomOf="@+id/TVLoginTittle"
+        tools:alpha="100" />
+
+    <com.example.cepstun.cv.CustomEditText
+        android:id="@+id/ETEmail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/bg_et"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/plus_jakarta_sans"
+        android:hint="@string/hint_email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:maxLength="25"
+        android:paddingHorizontal="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TVLoginTittle"
+        app:layout_constraintStart_toStartOf="@+id/TVTittleEmail"
+        app:layout_constraintTop_toBottomOf="@+id/TVTittleEmail"
+        tools:alpha="100" />
+
+    <TextView
+        android:id="@+id/TVTittlePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:alpha="0"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ETEmail"
+        app:layout_constraintTop_toBottomOf="@+id/ETEmail"
+        tools:alpha="100" />
+
+    <com.example.cepstun.cv.CustomEditText
+        android:id="@+id/ETPassword"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:autofillHints="password"
+        android:background="@drawable/bg_et"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/plus_jakarta_sans"
+        android:hint="@string/password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:paddingHorizontal="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/TVLoginTittle"
+        app:layout_constraintStart_toStartOf="@+id/TVTittlePassword"
+        app:layout_constraintTop_toBottomOf="@+id/TVTittlePassword"
+        tools:alpha="100" />
+
+    <TextView
+        android:id="@+id/TVTittlePassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:alpha="0"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/confirm_password"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/ETPassword"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword"
+        tools:alpha="100" />
+
+    <com.example.cepstun.cv.CustomEditText
+        android:id="@+id/ETPassword2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:autofillHints="password"
+        android:background="@drawable/bg_et"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/plus_jakarta_sans"
+        android:hint="@string/password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:maxLength="15"
+        android:paddingHorizontal="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ETPassword"
+        app:layout_constraintStart_toStartOf="@+id/TVTittlePassword2"
+        app:layout_constraintTop_toBottomOf="@+id/TVTittlePassword2"
+        tools:alpha="100" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BRegister"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_login"
+        android:enabled="false"
+        android:fontFamily="@font/plus_jakarta_sans_bold"
+        android:text="@string/button_register"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:transitionName="button"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/TVAnotherLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TVAnotherLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/or_login_with"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/GLAnotherLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="132dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="13dp"
+        android:background="@drawable/bg_divider"
+        app:layout_constraintBottom_toBottomOf="@+id/TVAnotherLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVAnotherLogin"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="132dp"
+        android:layout_height="3dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/bg_divider"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="@+id/TVAnotherLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TVAnotherLogin" />
+
+    <GridLayout
+        android:id="@+id/GLAnotherLogin"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="60dp"
+        android:columnCount="3"
+        android:rowCount="1"
+        app:layout_constraintBottom_toTopOf="@+id/LLLogin"
+        app:layout_constraintEnd_toEndOf="@+id/BRegister"
+        app:layout_constraintStart_toStartOf="@+id/BRegister">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MCVLoginGoogle"
+            style="@style/MyCardView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="1dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/google_logo"
+                android:padding="10dp"
+                android:src="@drawable/google_logo" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MCVLoginFacbeook"
+            style="@style/MyCardView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="1dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/facebook_logo"
+                android:padding="10dp"
+                android:src="@drawable/facebook_logo" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MCVLoginApple"
+            style="@style/MyCardView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="1dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/apple_logo"
+                android:padding="10dp"
+                android:src="@drawable/apple_logo" />
+        </com.google.android.material.card.MaterialCardView>
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/LLLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/TVHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/have_account"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/TVLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:text="@string/login_here"
+            android:textColor="@color/yellow"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/TVNoteHaveAccount"
+            app:layout_constraintTop_toTopOf="@+id/TVNoteHaveAccount" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

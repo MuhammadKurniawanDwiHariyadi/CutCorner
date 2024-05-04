@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.MenuHomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LLBackgroundTop"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="@drawable/bg_top"
+            android:elevation="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.search.SearchBar
+                style="@style/fontSearchBar"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/find_barbershop" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profileImage"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/default_profile"
+                app:civ_circle_background_color="@color/gray2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLBackgroundTop">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_arrow_drop_down"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:text="@string/your_location"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/TVLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/current_location"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

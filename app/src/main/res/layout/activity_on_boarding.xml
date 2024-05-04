@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_on_boarding2_scene"
+    tools:context=".ui.activity.OnBoardingActivity">
+
+    <ImageView
+        android:id="@+id/IVLogo"
+        style="@style/logo_onboarding"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/logo2"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/IVOnboarding"
+        android:layout_width="273dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/onboardingImage"
+        android:src="@drawable/onboard1"
+        app:layout_constraintBottom_toTopOf="@id/TVTittle"
+        app:layout_constraintEnd_toEndOf="@+id/TVDescription"
+        app:layout_constraintStart_toStartOf="@+id/TVDescription" />
+
+    <TextView
+        android:id="@+id/TVTittle"
+        style="@style/font"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/onboarding1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TVDescription"
+        app:layout_constraintEnd_toEndOf="@+id/TVDescription"
+        app:layout_constraintStart_toStartOf="@+id/TVDescription" />
+
+    <TextView
+        android:id="@+id/TVDescription"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="455dp"
+        android:text="@string/onboardingDesc1"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/IVOnboarding2"
+        android:layout_width="273dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/onboardingImage"
+        android:src="@drawable/onboard2"
+        app:layout_constraintBottom_toTopOf="@id/TVTittle2"
+        app:layout_constraintEnd_toEndOf="@+id/TVDescription2"
+        app:layout_constraintStart_toStartOf="@+id/TVDescription2" />
+
+    <TextView
+        android:id="@+id/TVTittle2"
+        style="@style/font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/onboarding2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TVDescription2"
+        app:layout_constraintEnd_toEndOf="@+id/TVDescription2"
+        app:layout_constraintStart_toStartOf="@+id/TVDescription2" />
+
+    <TextView
+        android:id="@+id/TVDescription2"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="455dp"
+        android:text="@string/onboardingDesc2"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/IVOnboarding3"
+        android:layout_width="273dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="@string/onboardingImage"
+        android:src="@drawable/onboard3"
+        app:layout_constraintBottom_toTopOf="@id/TVTittle3"
+        app:layout_constraintEnd_toEndOf="@+id/TVDescription3"
+        app:layout_constraintStart_toStartOf="@+id/TVDescription3" />
+
+    <TextView
+        android:id="@+id/TVTittle3"
+        style="@style/font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/onboarding3"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TVDescription3"
+        app:layout_constraintEnd_toEndOf="@+id/TVDescription3"
+        app:layout_constraintStart_toStartOf="@+id/TVDescription3" />
+
+    <TextView
+        android:id="@+id/TVDescription3"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="455dp"
+        android:text="@string/onboardingDesc3"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu2"
+        app:layout_constraintEnd_toStartOf="@+id/menu2"
+        app:layout_constraintTop_toTopOf="@+id/menu2"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/brown" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:alpha="0"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/brown" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="30dp"
+        android:alpha="0"
+        app:altSrc="@drawable/ic_circle_full_24"
+        app:layout_constraintBottom_toBottomOf="@+id/menu2"
+        app:layout_constraintStart_toEndOf="@+id/menu2"
+        app:layout_constraintTop_toTopOf="@+id/menu2"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/brown" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BLogin"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_login"
+        android:fontFamily="@font/plus_jakarta_sans"
+        android:text="@string/button_login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/BSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BSignUp"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_sign_up"
+        android:fontFamily="@font/plus_jakarta_sans"
+        android:text="@string/button_sign_up"
+        android:textColor="@color/brown"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginBottom="23dp"
+        android:fontFamily="@font/plus_jakarta_sans"
+        android:text="@string/term_service"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="35dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

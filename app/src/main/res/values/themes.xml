@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Cepstun" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">#00000000</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.Cepstun" parent="Base.Theme.Cepstun" />
+
+
+<!--    <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">-->
+<!--        <item name="windowSplashScreenBackground">@color/brown</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_2</item>-->
+<!--        <item name="windowSplashScreenAnimationDuration">5000</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Base.Theme.Cepstun</item>-->
+<!--    </style>-->
+
+    <style name="logo_onboarding">
+        <item name="android:tint">@color/black</item>
+    </style>
+
+    <style name="MyCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeColor">@color/pink</item>
+        <item name="strokeWidth">0.4dp</item>
+        <item name="cardBackgroundColor">@color/gray3</item>
+    </style>
+
+    <style name="MyCardView2" parent="Widget.MaterialComponents.CardView">
+        <item name="strokeColor">@color/brown</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="backgroundTop">
+        <item name="android:tint">@color/brown</item>
+    </style>
+
+    <style name="fontSearchBar">
+        <item name="android:fontFamily">@font/plus_jakarta_sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CustomIndicator">
+        <item name="android:color">@color/brown</item>
+    </style>
+
+</resources>
+

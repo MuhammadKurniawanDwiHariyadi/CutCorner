@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "201893687769",
+    "firebase_url": "https://cut-corner-bangkit-24-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cut-corner-bangkit-24",
+    "storage_bucket": "cut-corner-bangkit-24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201893687769:android:b6f5bbd0d87d904b4829c8",
+        "android_client_info": {
+          "package_name": "com.example.cepstun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201893687769-oe53ii5e6ee0ggmjo5kjgn2poassuo4b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cepstun",
+            "certificate_hash": "b931e858f9233d38325749f6012c7d92d7fcd56b"
+          }
+        },
+        {
+          "client_id": "201893687769-sr07ofrp9v95uek9u5md1dcr3qudto1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACnaBXlR1s0rEK3vweVJzDq840gI-_HoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201893687769-sr07ofrp9v95uek9u5md1dcr3qudto1c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
